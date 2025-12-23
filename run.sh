@@ -11,7 +11,7 @@ main() {
     cat <<"EOF"
 ┌───────────────────────────────────────────────────────────────────┐
 │                   Auto Install Linux Script                       │
-│                   v2.2.0 -- By Magnetarman                        │
+│                   v2.3.0 -- By Magnetarman                        │
 └───────────────────────────────────────────────────────────────────┘
 
 EOF
@@ -37,6 +37,13 @@ EOF
 
             # Richiama lo script nella sottocartella 'mint'
             bash "$SCRIPT_DIR/mint/setup.sh"
+        elif [[ "$ID" == "rocky" || "$ID" == "almalinux" ]]; then
+            print_success "Sistema RHEL-based rilevato. Avvio di rhel.sh..."
+            # Ottieni la directory dove si trova lo script originale
+            SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+            # Richiama lo script nella sottocartella 'mint'
+            bash "$SCRIPT_DIR/rhel/setup.sh"
         else
             print_error "Distribuzione non supportata: $ID"
         fi

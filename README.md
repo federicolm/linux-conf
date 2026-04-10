@@ -155,6 +155,7 @@ Installa linux-conf utilizzando il seguente metodo:
 - [x] **`V2.0.0`**: <strike>Refator totale progetto per future implementazioni. Versione linux Mint utilizzabile.</strike>
 - [x] **`V2.1.0`**: <strike>Aggiornamento App.</strike>
 - [x] **`V2.2.0`**: <strike>Refacor ed ottimizzazione codice vari script, test totale sulla funzionalità. Fix Warning. Aggiornamento script installazione Da Vinci con supporto alla versione 20.</strike>
+- [x] **`V2.9.9`**: Inizio supporto alle versione rhel based (AlmaLinux, RockyLinux, OracleLinux nelle versioni 8.*,9.*,10.*)
 - [ ] **`V3.0.0`**: Supporto per Arch Linux
 - [ ] **`V4.0.0`**: Scelta interattiva al primo avvio su quali App/Funzioni installare.
 
